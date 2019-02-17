@@ -13,13 +13,17 @@
 .file-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding: 0 10px;
 }
 
 .file-list .file {
     position: relative;
     text-align: center;
     word-wrap: break-word;
+    margin-right: 20px;
+    width: 75px;
 }
 
 .file-list .file .icon {
@@ -38,4 +42,5 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
 }
