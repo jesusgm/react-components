@@ -1,0 +1,25 @@
+.conflict-item {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.conflict-item>div {
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 33%;
+}
+
+.conflict-item .local .icon {
+  float: right;
+}
+
+.conflict-item .remote .icon {
+  float: left;
+}
+
+.conflict-item .result .icon {
+  float: right;
+}
