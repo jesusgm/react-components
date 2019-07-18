@@ -12,6 +12,9 @@ import "./App.css";
 import FileInput from "./components/fileInput";
 import ConflictsResolver from "./components/conflictResolver";
 
+import { Draggable } from "react-drag-and-drop";
+import DropableList from "./components/DropableList";
+
 library.add(faFile);
 library.add(faTimes);
 library.add(faArrowRight);
@@ -32,7 +35,7 @@ class App extends Component {
               // }
             ]
           }
-        />
+        />{" "}
         <hr />
         <ConflictsResolver
           conflicts={[
@@ -63,6 +66,27 @@ class App extends Component {
             }
           ]}
         />
+        <hr />
+        <Draggable
+          type="listitem"
+          data={JSON.stringify({ name: "item1", id: 1 })}
+        >
+          Item 1
+        </Draggable>
+        <Draggable
+          type="listitem"
+          data={JSON.stringify({ name: "item2", id: 2 })}
+        >
+          Item 2
+        </Draggable>
+        <Draggable
+          type="listitem"
+          data={JSON.stringify({ name: "item3", id: 3 })}
+        >
+          Item 3
+        </Draggable>
+        <hr />
+        <DropableList value={[{ name: "item2", id: 2 }]} types={["listitem"]} />
       </div>
     );
   }
