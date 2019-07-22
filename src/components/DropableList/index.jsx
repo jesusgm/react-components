@@ -26,6 +26,12 @@ class DropableList extends Component {
     });
   }
 
+  remove(id) {
+    this.setState({
+      list: this.state.list.filter(elm => elm.id !== id)
+    });
+  }
+
   render() {
     return (
       <div>
@@ -33,7 +39,12 @@ class DropableList extends Component {
           <ul className="dropable-list">
             {this.state.list.length > 0
               ? this.state.list.map(listItem => (
-                  <li key={listItem.id}>{listItem.name}</li>
+                  <li key={listItem.id}>
+                    {listItem.name}
+                    <button onClick={() => this.remove(listItem.id)}>
+                      Eliminar
+                    </button>
+                  </li>
                 ))
               : null}
           </ul>
