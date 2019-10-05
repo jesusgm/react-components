@@ -4,8 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./styles.css";
 
 const propTypes = {
+  /** Value */
   value: PropTypes.array,
+  /** Name of the field */
   name: PropTypes.string.isRequired,
+  /** Function thats will be called after change */
   onChange: PropTypes.func.isRequired
 };
 
