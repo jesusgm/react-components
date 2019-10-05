@@ -30,6 +30,36 @@
       }
     },
     {
+      "key": "src/components/binaryClock/binaryClock.mdx",
+      "value": {
+        "name": "Binary Clock",
+        "id": "b76d9b90dd53dcc6054bb38a1307879e",
+        "filepath": "src/components/binaryClock/binaryClock.mdx",
+        "fullpath": "/home/suso/proyectos/react-components/src/components/binaryClock/binaryClock.mdx",
+        "link": "",
+        "slug": "src-components-binary-clock-binary-clock",
+        "route": "/src-components-binary-clock-binary-clock",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "binaryclock",
+            "depth": 1,
+            "value": "BinaryClock"
+          },
+          {
+            "slug": "props",
+            "depth": 2,
+            "value": "Props"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/fileInput/fileInput.mdx",
       "value": {
         "name": "Input file",
@@ -62,13 +92,108 @@
   ],
   "props": [
     {
-      "key": "src/App.js",
+      "key": "src/App.jsx",
       "value": [
         {
           "description": "",
           "displayName": "App",
-          "methods": [],
+          "methods": [
+            {
+              "name": "increment",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "index",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
           "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "src/components/fileInput/index.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "FileInput",
+          "methods": [
+            {
+              "name": "asignEventListeners",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleFile",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "event",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "readFileContent",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "file",
+                  "type": null
+                },
+                {
+                  "name": "index",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleDragOver",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "evt",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "FileInput",
+          "props": {
+            "value": {
+              "type": {
+                "name": "array"
+              },
+              "required": false,
+              "description": "Value"
+            },
+            "name": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Name of the field"
+            },
+            "onChange": {
+              "type": {
+                "name": "func"
+              },
+              "required": true,
+              "description": "Function thats will be called after change"
+            }
+          }
         }
       ]
     }

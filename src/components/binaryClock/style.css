@@ -1,0 +1,16 @@
+.bclock .cero::before {
+    font-family: 'FontAwesome';
+    content: '\f111';
+}
+
+.bclock .empty {
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.bclock .full {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
