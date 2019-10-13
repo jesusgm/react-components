@@ -17,11 +17,15 @@ import "./App.css";
 // import { Draggable } from "react-drag-and-drop";
 // import DropableList from "./components/DropableList";
 
-// import BinaryClock from "./components/binaryClock";
+import BinaryClock from "./components/binaryClock";
 
-// import Editor from "./components/editor";
+import Editor from "./components/editor";
 
-import Lista from "./components/virtualized/lista";
+import ReactMarkdown from "react-markdown";
+
+import CodeHightligter from "./components/code-hightlighter";
+
+// import Lista from "./components/virtualized/lista";
 
 library.add(faFile);
 library.add(faTimes);
@@ -41,7 +45,8 @@ class App extends Component {
     }
 
     this.state = {
-      rows
+      rows,
+      editorValue: ""
     };
 
     this.increment = this.increment.bind(this);
@@ -63,7 +68,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <BinaryClock />
+        <ReactMarkdown
+          source={"# This is a header\n\nAnd this is a paragraph"}
+        />
+        <CodeHightligter lang="python">
+          var list = []; list.push(1); list.push(2); list.push(3);
+          list.forEach(el => console.log(el));
+        </CodeHightligter>
+        <BinaryClock />
+        {/*
         <h2> File Input </h2>
         <FileInput
           name="upload-file"
@@ -145,9 +158,13 @@ class App extends Component {
           types={["listitem"]}
         /> */}
         {/* <hr />
-        <Editor /> */}
+         */}
+        <Editor
+          value={this.state.editorValue}
+          onChange={value => this.setState({ editorValue: value })}
+        />
         {/* <hr /> */}
-        <Lista rows={this.state.rows} increment={this.increment} />
+        {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
       </div>
     );
   }
