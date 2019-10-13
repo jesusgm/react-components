@@ -87,7 +87,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "/react-components/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -18211,11 +18211,11 @@ var _parsePath = __webpack_require__(/*! ./parse-path */ "../node_modules/gatsby
 exports.parsePath = _parsePath.parsePath;
 
 function withPrefix(path) {
-  return normalizePath([ true ? "" : undefined, path].join("/"));
+  return normalizePath([ true ? "/react-components" : undefined, path].join("/"));
 }
 
 function withAssetPrefix(path) {
-  return [""].concat([path.replace(/^\//, "")]).join("/");
+  return ["/react-components"].concat([path.replace(/^\//, "")]).join("/");
 }
 
 function normalizePath(path) {
@@ -78264,22 +78264,9 @@ function MDXContent(_ref) {
     mdxType: "Props"
   }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("h2", {
     "id": "basic-usage"
-  }, `Basic usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])(docz__WEBPACK_IMPORTED_MODULE_4__["Playground"], {
-    __position: 1,
-    __code: '<Editor value=\"Lorem ipsum dolor\" onChange={value => console.log(value)} />',
-    __scope: {
-      props,
-      DefaultLayout: _home_suso_proyectos_react_components_node_modules_gatsby_theme_docz_src_base_Layout_js__WEBPACK_IMPORTED_MODULE_3__["default"],
-      Playground: docz__WEBPACK_IMPORTED_MODULE_4__["Playground"],
-      Props: docz__WEBPACK_IMPORTED_MODULE_4__["Props"],
-      Editor: _index_jsx__WEBPACK_IMPORTED_MODULE_5__["default"]
-    },
-    mdxType: "Playground"
-  }, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])(_index_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    value: "Lorem ipsum dolor",
-    onChange: value => console.log(value),
-    mdxType: "Editor"
-  })), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("h2", {
+  }, `Basic usage`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("p", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("em", {
+    parentName: "p"
+  }, `Previsualización no disponible`)), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("h2", {
     "id": "dependencies"
   }, `Dependencies`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("p", null, `Its necesary install the next dependencies`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("pre", null, Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("code", _extends({
     parentName: "pre"
@@ -78899,87 +78886,6 @@ MDXContent.isMDXComponent = true;
 
 /***/ }),
 
-/***/ "../src/index.mdx":
-/*!************************!*\
-  !*** ../src/index.mdx ***!
-  \************************/
-/*! exports provided: _frontmatter, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_frontmatter", function() { return _frontmatter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MDXContent; });
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/core */ "../node_modules/@emotion/core/dist/core.esm.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _mdx_js_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mdx-js/react */ "../node_modules/@mdx-js/react/dist/index.es.js");
-/* harmony import */ var _home_suso_proyectos_react_components_node_modules_gatsby_theme_docz_src_base_Layout_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/gatsby-theme-docz/src/base/Layout.js */ "../node_modules/gatsby-theme-docz/src/base/Layout.js");
-
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
-
-
-/* @jsx mdx */
-
-
-/* @jsx mdx */
-
-
-const _frontmatter = {};
-
-if (typeof _frontmatter !== 'undefined' && _frontmatter && _frontmatter === Object(_frontmatter) && Object.isExtensible(_frontmatter)) {
-  Object.defineProperty(_frontmatter, '__filemeta', {
-    configurable: true,
-    value: {
-      name: "_frontmatter",
-      filename: "src/index.mdx"
-    }
-  });
-}
-
-const makeShortcode = name => function MDXDefaultShortcode(props) {
-  console.warn("Component " + name + " was not imported, exported, or provided by MDXProvider as global scope");
-  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("div", props);
-};
-
-const layoutProps = {
-  _frontmatter
-};
-const MDXLayout = _home_suso_proyectos_react_components_node_modules_gatsby_theme_docz_src_base_Layout_js__WEBPACK_IMPORTED_MODULE_3__["default"];
-function MDXContent(_ref) {
-  let {
-    components
-  } = _ref,
-      props = _objectWithoutProperties(_ref, ["components"]);
-
-  return Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])(MDXLayout, _extends({}, layoutProps, props, {
-    components: components,
-    mdxType: "MDXLayout"
-  }), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("h1", {
-    "id": "hello-world"
-  }, `Hello world`), Object(_mdx_js_react__WEBPACK_IMPORTED_MODULE_2__["mdx"])("p", null, `Hello, I'm a mdx file!`));
-}
-
-if (typeof MDXContent !== 'undefined' && MDXContent && MDXContent === Object(MDXContent) && Object.isExtensible(MDXContent)) {
-  Object.defineProperty(MDXContent, '__filemeta', {
-    configurable: true,
-    value: {
-      name: "MDXContent",
-      filename: "src/index.mdx"
-    }
-  });
-}
-
-;
-MDXContent.isMDXComponent = true;
-
-/***/ }),
-
 /***/ "./.cache/api-runner-ssr.js":
 /*!**********************************!*\
   !*** ./.cache/api-runner-ssr.js ***!
@@ -79265,7 +79171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _strip_prefix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./strip-prefix */ "./.cache/strip-prefix.js");
 /* harmony import */ var _normalize_page_path__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./normalize-page-path */ "./.cache/normalize-page-path.js");
 const pathCache=new Map();let matchPaths=[];const trimPathname=rawPathname=>{let pathname=decodeURIComponent(rawPathname);// Remove the pathPrefix from the pathname.
-let trimmedPathname=Object(_strip_prefix__WEBPACK_IMPORTED_MODULE_1__["default"])(pathname,"")// Remove any hashfragment
+let trimmedPathname=Object(_strip_prefix__WEBPACK_IMPORTED_MODULE_1__["default"])(pathname,"/react-components")// Remove any hashfragment
 .split(`#`)[0]// Remove search query
 .split(`?`)[0];return trimmedPathname;};/**
  * Set list of matchPaths
@@ -79358,7 +79264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _prefetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./prefetch */ "./.cache/prefetch.js");
 /* harmony import */ var _emitter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./emitter */ "./.cache/emitter.js");
 /* harmony import */ var _find_path__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./find-path */ "./.cache/find-path.js");
-function _toConsumableArray(arr){return _arrayWithoutHoles(arr)||_iterableToArray(arr)||_nonIterableSpread();}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter){if(Symbol.iterator in Object(iter)||Object.prototype.toString.call(iter)==="[object Arguments]")return Array.from(iter);}function _arrayWithoutHoles(arr){if(Array.isArray(arr)){for(var i=0,arr2=new Array(arr.length);i<arr.length;i++)arr2[i]=arr[i];return arr2;}}const preferDefault=m=>m&&m.default||m;const stripSurroundingSlashes=s=>{s=s[0]===`/`?s.slice(1):s;s=s.endsWith(`/`)?s.slice(0,-1):s;return s;};const createPageDataUrl=path=>{const fixedPath=path===`/`?`index`:stripSurroundingSlashes(path);return`${""}/page-data/${fixedPath}/page-data.json`;};const doFetch=(url,method=`GET`)=>new Promise((resolve,reject)=>{const req=new XMLHttpRequest();req.open(method,url,true);req.onreadystatechange=()=>{if(req.readyState==4){resolve(req);}};req.send(null);});const loadPageDataJson=loadObj=>{const{pagePath,retries=0}=loadObj;const url=createPageDataUrl(pagePath);return doFetch(url).then(req=>{const{status,responseText}=req;// Handle 200
+function _toConsumableArray(arr){return _arrayWithoutHoles(arr)||_iterableToArray(arr)||_nonIterableSpread();}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter){if(Symbol.iterator in Object(iter)||Object.prototype.toString.call(iter)==="[object Arguments]")return Array.from(iter);}function _arrayWithoutHoles(arr){if(Array.isArray(arr)){for(var i=0,arr2=new Array(arr.length);i<arr.length;i++)arr2[i]=arr[i];return arr2;}}const preferDefault=m=>m&&m.default||m;const stripSurroundingSlashes=s=>{s=s[0]===`/`?s.slice(1):s;s=s.endsWith(`/`)?s.slice(0,-1):s;return s;};const createPageDataUrl=path=>{const fixedPath=path===`/`?`index`:stripSurroundingSlashes(path);return`${"/react-components"}/page-data/${fixedPath}/page-data.json`;};const doFetch=(url,method=`GET`)=>new Promise((resolve,reject)=>{const req=new XMLHttpRequest();req.open(method,url,true);req.onreadystatechange=()=>{if(req.readyState==4){resolve(req);}};req.send(null);});const loadPageDataJson=loadObj=>{const{pagePath,retries=0}=loadObj;const url=createPageDataUrl(pagePath);return doFetch(url).then(req=>{const{status,responseText}=req;// Handle 200
 if(status===200){try{const jsonPayload=JSON.parse(responseText);if(jsonPayload.webpackCompilationHash===undefined){throw new Error(`not a valid pageData response`);}return Object.assign(loadObj,{status:`success`,payload:jsonPayload});}catch(err){// continue regardless of error
 }}// Handle 404
 if(status===404||status===200){// If the request was for a 404 page and it doesn't exist, we're done
@@ -79392,7 +79298,7 @@ if(this.pageDb.has(pagePath)){return false;}return true;}prefetch(pagePath){if(!
 if(!this.prefetchTriggered.has(pagePath)){this.apiRunner(`onPrefetchPathname`,{pathname:pagePath});this.prefetchTriggered.add(pagePath);}// If a plugin has disabled core prefetching, stop now.
 if(this.prefetchDisabled){return false;}const realPath=Object(_find_path__WEBPACK_IMPORTED_MODULE_3__["findPath"])(pagePath);// Todo make doPrefetch logic cacheable
 // eslint-disable-next-line consistent-return
-this.doPrefetch(realPath).then(()=>{if(!this.prefetchCompleted.has(pagePath)){this.apiRunner(`onPostPrefetchPathname`,{pathname:pagePath});this.prefetchCompleted.add(pagePath);}});return true;}doPrefetch(pagePath){throw new Error(`doPrefetch not implemented`);}hovering(rawPath){this.loadPage(rawPath);}getResourceURLsForPathname(rawPath){const pagePath=Object(_find_path__WEBPACK_IMPORTED_MODULE_3__["findPath"])(rawPath);const page=this.pageDataDb.get(pagePath);if(page){const pageResources=toPageResources(page.payload);return[].concat(_toConsumableArray(createComponentUrls(pageResources.page.componentChunkName)),[createPageDataUrl(pagePath)]);}else{return null;}}isPageNotFound(rawPath){const pagePath=Object(_find_path__WEBPACK_IMPORTED_MODULE_3__["findPath"])(rawPath);const page=this.pageDb.get(pagePath);return page&&page.notFound===true;}}const createComponentUrls=componentChunkName=>window.___chunkMapping[componentChunkName].map(chunk=>""+chunk);class ProdLoader extends BaseLoader{constructor(asyncRequires,matchPaths){const loadComponent=chunkName=>asyncRequires.components[chunkName]().then(preferDefault);super(loadComponent,matchPaths);}doPrefetch(pagePath){const pageDataUrl=createPageDataUrl(pagePath);return Object(_prefetch__WEBPACK_IMPORTED_MODULE_1__["default"])(pageDataUrl).then(()=>// This was just prefetched, so will return a response from
+this.doPrefetch(realPath).then(()=>{if(!this.prefetchCompleted.has(pagePath)){this.apiRunner(`onPostPrefetchPathname`,{pathname:pagePath});this.prefetchCompleted.add(pagePath);}});return true;}doPrefetch(pagePath){throw new Error(`doPrefetch not implemented`);}hovering(rawPath){this.loadPage(rawPath);}getResourceURLsForPathname(rawPath){const pagePath=Object(_find_path__WEBPACK_IMPORTED_MODULE_3__["findPath"])(rawPath);const page=this.pageDataDb.get(pagePath);if(page){const pageResources=toPageResources(page.payload);return[].concat(_toConsumableArray(createComponentUrls(pageResources.page.componentChunkName)),[createPageDataUrl(pagePath)]);}else{return null;}}isPageNotFound(rawPath){const pagePath=Object(_find_path__WEBPACK_IMPORTED_MODULE_3__["findPath"])(rawPath);const page=this.pageDb.get(pagePath);return page&&page.notFound===true;}}const createComponentUrls=componentChunkName=>window.___chunkMapping[componentChunkName].map(chunk=>"/react-components"+chunk);class ProdLoader extends BaseLoader{constructor(asyncRequires,matchPaths){const loadComponent=chunkName=>asyncRequires.components[chunkName]().then(preferDefault);super(loadComponent,matchPaths);}doPrefetch(pagePath){const pageDataUrl=createPageDataUrl(pagePath);return Object(_prefetch__WEBPACK_IMPORTED_MODULE_1__["default"])(pageDataUrl).then(()=>// This was just prefetched, so will return a response from
 // the cache instead of making another request to the server
 this.loadPageDataJson(pagePath)).then(result=>{if(result.status!==`success`){return Promise.resolve();}const pageData=result.payload;const chunkName=pageData.componentChunkName;const componentUrls=createComponentUrls(chunkName);return Promise.all(componentUrls.map(_prefetch__WEBPACK_IMPORTED_MODULE_1__["default"])).then(()=>pageData);});}}let instance;const setLoader=_loader=>{instance=_loader;};const publicLoader={// Deprecated methods. As far as we're aware, these are only used by
 // core gatsby and the offline plugin, however there's a very small
@@ -79457,25 +79363,25 @@ function _extends(){_extends=Object.assign||function(target){for(var i=1;i<argum
 // For some extremely mysterious reason, webpack adds the above module *after*
 // this module so that when this code runs, testRequireError is undefined.
 // So in the meantime, we'll just inline it.
-const testRequireError=(moduleName,err)=>{const regex=new RegExp(`Error: Cannot find module\\s.${moduleName}`);const firstLine=err.toString().split(`\n`)[0];return regex.test(firstLine);};let Html;try{Html=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));}catch(err){if(testRequireError(`../src/html`,err)){Html=__webpack_require__(/*! ./default-html */ "./.cache/default-html.js");}else{throw err;}}Html=Html&&Html.__esModule?Html.default:Html;const getPageDataPath=path=>{const fixedPagePath=path===`/`?`index`:path;return join(`page-data`,fixedPagePath,`page-data.json`);};const getPageDataUrl=pagePath=>{const pageDataPath=getPageDataPath(pagePath);return`${""}/${pageDataPath}`;};const getPageDataFile=pagePath=>{const pageDataPath=getPageDataPath(pagePath);return join(process.cwd(),`public`,pageDataPath);};const loadPageDataSync=pagePath=>{const pageDataPath=getPageDataPath(pagePath);const pageDataFile=join(process.cwd(),`public`,pageDataPath);try{const pageDataJson=fs.readFileSync(pageDataFile);return JSON.parse(pageDataJson);}catch(error){// not an error if file is not found. There's just no page data
+const testRequireError=(moduleName,err)=>{const regex=new RegExp(`Error: Cannot find module\\s.${moduleName}`);const firstLine=err.toString().split(`\n`)[0];return regex.test(firstLine);};let Html;try{Html=__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module '../src/html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));}catch(err){if(testRequireError(`../src/html`,err)){Html=__webpack_require__(/*! ./default-html */ "./.cache/default-html.js");}else{throw err;}}Html=Html&&Html.__esModule?Html.default:Html;const getPageDataPath=path=>{const fixedPagePath=path===`/`?`index`:path;return join(`page-data`,fixedPagePath,`page-data.json`);};const getPageDataUrl=pagePath=>{const pageDataPath=getPageDataPath(pagePath);return`${"/react-components"}/${pageDataPath}`;};const getPageDataFile=pagePath=>{const pageDataPath=getPageDataPath(pagePath);return join(process.cwd(),`public`,pageDataPath);};const loadPageDataSync=pagePath=>{const pageDataPath=getPageDataPath(pagePath);const pageDataFile=join(process.cwd(),`public`,pageDataPath);try{const pageDataJson=fs.readFileSync(pageDataFile);return JSON.parse(pageDataJson);}catch(error){// not an error if file is not found. There's just no page data
 return null;}};const createElement=React.createElement;const sanitizeComponents=components=>{const componentsArray=ensureArray(components);return componentsArray.map(component=>{// Ensure manifest is always loaded from content server
 // And not asset server when an assetPrefix is used
 if(undefined&&component.props.rel===`manifest`){return React.cloneElement(component,{href:replace(component.props.href,undefined,``)});}return component;});};const ensureArray=components=>{if(Array.isArray(components)){// remove falsy items and flatten
 return flattenDeep(components.filter(val=>Array.isArray(val)?val.length>0:val));}else{// we also accept single components, so we need to handle this case as well
 return components?[components]:[];}};/* harmony default export */ __webpack_exports__["default"] = ((pagePath,callback)=>{var _postBodyComponents;let bodyHtml=``;let headComponents=[Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("meta",{name:"generator",content:`Gatsby ${gatsbyVersion}`,key:`generator-${gatsbyVersion}`})];let htmlAttributes={};let bodyAttributes={};let preBodyComponents=[];let postBodyComponents=[];let bodyProps={};const replaceBodyHTMLString=body=>{bodyHtml=body;};const setHeadComponents=components=>{headComponents=headComponents.concat(sanitizeComponents(components));};const setHtmlAttributes=attributes=>{htmlAttributes=merge(htmlAttributes,attributes);};const setBodyAttributes=attributes=>{bodyAttributes=merge(bodyAttributes,attributes);};const setPreBodyComponents=components=>{preBodyComponents=preBodyComponents.concat(sanitizeComponents(components));};const setPostBodyComponents=components=>{postBodyComponents=postBodyComponents.concat(sanitizeComponents(components));};const setBodyProps=props=>{bodyProps=merge({},bodyProps,props);};const getHeadComponents=()=>headComponents;const replaceHeadComponents=components=>{headComponents=sanitizeComponents(components);};const getPreBodyComponents=()=>preBodyComponents;const replacePreBodyComponents=components=>{preBodyComponents=sanitizeComponents(components);};const getPostBodyComponents=()=>postBodyComponents;const replacePostBodyComponents=components=>{postBodyComponents=sanitizeComponents(components);};const pageDataRaw=fs.readFileSync(getPageDataFile(pagePath));const pageData=JSON.parse(pageDataRaw);const pageDataUrl=getPageDataUrl(pagePath);const{componentChunkName}=pageData;class RouteHandler extends React.Component{render(){const props=_objectSpread({},this.props,pageData.result,{// pathContext was deprecated in v2. Renamed to pageContext
-pathContext:pageData.result?pageData.result.pageContext:undefined});const pageElement=createElement(syncRequires.components[componentChunkName],props);const wrappedPage=apiRunner(`wrapPageElement`,{element:pageElement,props},pageElement,({result})=>{return{element:result,props};}).pop();return wrappedPage;}}const routerElement=createElement(ServerLocation,{url:`${""}${pagePath}`},createElement(Router,{id:`gatsby-focus-wrapper`,baseuri:`${""}`},createElement(RouteHandler,{path:`/*`})));const bodyComponent=apiRunner(`wrapRootElement`,{element:routerElement,pathname:pagePath},routerElement,({result})=>{return{element:result,pathname:pagePath};}).pop();// Let the site or plugin render the page component.
-apiRunner(`replaceRenderer`,{bodyComponent,replaceBodyHTMLString,setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,pathPrefix:""});// If no one stepped up, we'll handle it.
+pathContext:pageData.result?pageData.result.pageContext:undefined});const pageElement=createElement(syncRequires.components[componentChunkName],props);const wrappedPage=apiRunner(`wrapPageElement`,{element:pageElement,props},pageElement,({result})=>{return{element:result,props};}).pop();return wrappedPage;}}const routerElement=createElement(ServerLocation,{url:`${"/react-components"}${pagePath}`},createElement(Router,{id:`gatsby-focus-wrapper`,baseuri:`${"/react-components"}`},createElement(RouteHandler,{path:`/*`})));const bodyComponent=apiRunner(`wrapRootElement`,{element:routerElement,pathname:pagePath},routerElement,({result})=>{return{element:result,pathname:pagePath};}).pop();// Let the site or plugin render the page component.
+apiRunner(`replaceRenderer`,{bodyComponent,replaceBodyHTMLString,setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,pathPrefix:"/react-components"});// If no one stepped up, we'll handle it.
 if(!bodyHtml){try{bodyHtml=renderToString(bodyComponent);}catch(e){// ignore @reach/router redirect errors
 if(!isRedirect(e))throw e;}}// Create paths to scripts
 let scriptsAndStyles=flatten([`app`,componentChunkName].map(s=>{const fetchKey=`assetsByChunkName[${s}]`;let chunks=get(stats,fetchKey);let namedChunkGroups=get(stats,`namedChunkGroups`);if(!chunks){return null;}chunks=chunks.map(chunk=>{if(chunk===`/`){return null;}return{rel:`preload`,name:chunk};});namedChunkGroups[s].assets.forEach(asset=>chunks.push({rel:`preload`,name:asset}));const childAssets=namedChunkGroups[s].childAssets;for(const rel in childAssets){chunks=merge(chunks,childAssets[rel].map(chunk=>{return{rel,name:chunk};}));}return chunks;})).filter(s=>isObject(s)).sort((s1,s2)=>s1.rel==`preload`?-1:1);// given priority to preload
-scriptsAndStyles=uniqBy(scriptsAndStyles,item=>item.name);const scripts=scriptsAndStyles.filter(script=>script.name&&script.name.endsWith(`.js`));const styles=scriptsAndStyles.filter(style=>style.name&&style.name.endsWith(`.css`));apiRunner(`onRenderBody`,{setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,loadPageDataSync,bodyHtml,scripts,styles,pathPrefix:""});scripts.slice(0).reverse().forEach(script=>{// Add preload/prefetch <link>s for scripts.
-headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"script",rel:script.rel,key:script.name,href:`${""}/${script.name}`}));});if(pageData){headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"fetch",rel:"preload",key:pageDataUrl,href:pageDataUrl,crossOrigin:"anonymous"}));}styles.slice(0).reverse().forEach(style=>{// Add <link>s for styles that should be prefetched
+scriptsAndStyles=uniqBy(scriptsAndStyles,item=>item.name);const scripts=scriptsAndStyles.filter(script=>script.name&&script.name.endsWith(`.js`));const styles=scriptsAndStyles.filter(style=>style.name&&style.name.endsWith(`.css`));apiRunner(`onRenderBody`,{setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,loadPageDataSync,bodyHtml,scripts,styles,pathPrefix:"/react-components"});scripts.slice(0).reverse().forEach(script=>{// Add preload/prefetch <link>s for scripts.
+headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"script",rel:script.rel,key:script.name,href:`${"/react-components"}/${script.name}`}));});if(pageData){headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"fetch",rel:"preload",key:pageDataUrl,href:pageDataUrl,crossOrigin:"anonymous"}));}styles.slice(0).reverse().forEach(style=>{// Add <link>s for styles that should be prefetched
 // otherwise, inline as a <style> tag
-if(style.rel===`prefetch`){headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"style",rel:style.rel,key:style.name,href:`${""}/${style.name}`}));}else{headComponents.unshift(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("style",{"data-href":`${""}/${style.name}`,dangerouslySetInnerHTML:{__html:fs.readFileSync(join(process.cwd(),`public`,style.name),`utf-8`)}}));}});const webpackCompilationHash=pageData.webpackCompilationHash;// Add page metadata for the current page
+if(style.rel===`prefetch`){headComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("link",{as:"style",rel:style.rel,key:style.name,href:`${"/react-components"}/${style.name}`}));}else{headComponents.unshift(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("style",{"data-href":`${"/react-components"}/${style.name}`,dangerouslySetInnerHTML:{__html:fs.readFileSync(join(process.cwd(),`public`,style.name),`utf-8`)}}));}});const webpackCompilationHash=pageData.webpackCompilationHash;// Add page metadata for the current page
 const windowPageData=`/*<![CDATA[*/window.pagePath="${pagePath}";window.webpackCompilationHash="${webpackCompilationHash}";/*]]>*/`;postBodyComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("script",{key:`script-loader`,id:`gatsby-script-loader`,dangerouslySetInnerHTML:{__html:windowPageData}}));// Add chunk mapping metadata
 const scriptChunkMapping=`/*<![CDATA[*/window.___chunkMapping=${JSON.stringify(chunkMapping)};/*]]>*/`;postBodyComponents.push(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("script",{key:`chunk-mapping`,id:`gatsby-chunk-mapping`,dangerouslySetInnerHTML:{__html:scriptChunkMapping}}));// Filter out prefetched bundles as adding them as a script tag
 // would force high priority fetching.
-const bodyScripts=scripts.filter(s=>s.rel!==`prefetch`).map(s=>{const scriptPath=`${""}/${JSON.stringify(s.name).slice(1,-1)}`;return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("script",{key:scriptPath,src:scriptPath,async:true});});(_postBodyComponents=postBodyComponents).push.apply(_postBodyComponents,_toConsumableArray(bodyScripts));apiRunner(`onPreRenderHTML`,{getHeadComponents,replaceHeadComponents,getPreBodyComponents,replacePreBodyComponents,getPostBodyComponents,replacePostBodyComponents,pathname:pagePath,pathPrefix:""});const html=`<!DOCTYPE html>${renderToStaticMarkup(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(Html,_extends({},bodyProps,{headComponents:headComponents,htmlAttributes:htmlAttributes,bodyAttributes:bodyAttributes,preBodyComponents:preBodyComponents,postBodyComponents:postBodyComponents,body:bodyHtml,path:pagePath})))}`;callback(null,html);});
+const bodyScripts=scripts.filter(s=>s.rel!==`prefetch`).map(s=>{const scriptPath=`${"/react-components"}/${JSON.stringify(s.name).slice(1,-1)}`;return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("script",{key:scriptPath,src:scriptPath,async:true});});(_postBodyComponents=postBodyComponents).push.apply(_postBodyComponents,_toConsumableArray(bodyScripts));apiRunner(`onPreRenderHTML`,{getHeadComponents,replaceHeadComponents,getPreBodyComponents,replacePreBodyComponents,getPostBodyComponents,replacePostBodyComponents,pathname:pagePath,pathPrefix:"/react-components"});const html=`<!DOCTYPE html>${renderToStaticMarkup(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])(Html,_extends({},bodyProps,{headComponents:headComponents,htmlAttributes:htmlAttributes,bodyAttributes:bodyAttributes,preBodyComponents:preBodyComponents,postBodyComponents:postBodyComponents,body:bodyHtml,path:pagePath})))}`;callback(null,html);});
 
 /***/ }),
 
@@ -79503,7 +79409,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 const{hot}=__webpack_require__(/*! react-hot-loader/root */ "../node_modules/react-hot-loader/root.js");// prefer default export if available
-const preferDefault=m=>m&&m.default||m;exports.components={"component---src-index-mdx":hot(preferDefault(__webpack_require__(/*! ../src/index.mdx */ "../src/index.mdx"))),"component---src-components-binary-clock-binary-clock-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/binaryClock/binaryClock.mdx */ "../src/components/binaryClock/binaryClock.mdx"))),"component---src-components-editor-editor-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/editor/editor.mdx */ "../src/components/editor/editor.mdx"))),"component---src-components-file-input-file-input-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/fileInput/fileInput.mdx */ "../src/components/fileInput/fileInput.mdx"))),"component---src-components-slider-slider-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/slider/slider.mdx */ "../src/components/slider/slider.mdx"))),"component---src-pages-404-js":hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")))};
+const preferDefault=m=>m&&m.default||m;exports.components={"component---src-components-binary-clock-binary-clock-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/binaryClock/binaryClock.mdx */ "../src/components/binaryClock/binaryClock.mdx"))),"component---src-components-editor-editor-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/editor/editor.mdx */ "../src/components/editor/editor.mdx"))),"component---src-components-slider-slider-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/slider/slider.mdx */ "../src/components/slider/slider.mdx"))),"component---src-components-file-input-file-input-mdx":hot(preferDefault(__webpack_require__(/*! ../src/components/fileInput/fileInput.mdx */ "../src/components/fileInput/fileInput.mdx"))),"component---src-pages-404-js":hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js")))};
 
 /***/ }),
 
@@ -79514,7 +79420,7 @@ const preferDefault=m=>m&&m.default||m;exports.components={"component---src-inde
 /*! exports provided: data, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"data\":{\"doczDb\":{\"id\":\"ace00e2b-9c46-5e24-a19a-5ed242ca9c64\",\"db\":\"{\\\"config\\\":{\\\"title\\\":\\\"React Components\\\",\\\"description\\\":\\\"My awesome app using docz\\\",\\\"menu\\\":[],\\\"repository\\\":null,\\\"native\\\":false,\\\"themeConfig\\\":{},\\\"separator\\\":\\\"-\\\",\\\"dest\\\":\\\"./docs\\\"},\\\"entries\\\":[{\\\"key\\\":\\\"src/index.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Hello world\\\",\\\"id\\\":\\\"6576455a124f9aaefd860597f03a8fe4\\\",\\\"filepath\\\":\\\"src/index.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/index.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-index\\\",\\\"route\\\":\\\"/src-index\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"hello-world\\\",\\\"depth\\\":1,\\\"value\\\":\\\"Hello world\\\"}]}},{\\\"key\\\":\\\"src/components/binaryClock/binaryClock.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Binary Clock\\\",\\\"id\\\":\\\"b76d9b90dd53dcc6054bb38a1307879e\\\",\\\"filepath\\\":\\\"src/components/binaryClock/binaryClock.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/binaryClock/binaryClock.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-binary-clock-binary-clock\\\",\\\"route\\\":\\\"/src-components-binary-clock-binary-clock\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"binaryclock\\\",\\\"depth\\\":1,\\\"value\\\":\\\"BinaryClock\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}},{\\\"key\\\":\\\"src/components/editor/editor.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Editor\\\",\\\"id\\\":\\\"5d208e1a6e7d5a4a742e64a1f9806b70\\\",\\\"filepath\\\":\\\"src/components/editor/editor.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/editor/editor.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-editor-editor\\\",\\\"route\\\":\\\"/src-components-editor-editor\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"description\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Description\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"},{\\\"slug\\\":\\\"dependencies\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Dependencies\\\"}]}},{\\\"key\\\":\\\"src/components/fileInput/fileInput.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Input file\\\",\\\"id\\\":\\\"d2b2eeffde29df0c6271bacabfbb757e\\\",\\\"filepath\\\":\\\"src/components/fileInput/fileInput.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/fileInput/fileInput.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-file-input-file-input\\\",\\\"route\\\":\\\"/src-components-file-input-file-input\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"inputfile\\\",\\\"depth\\\":1,\\\"value\\\":\\\"InputFile\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}},{\\\"key\\\":\\\"src/components/slider/slider.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Slider\\\",\\\"id\\\":\\\"64945b17f9c9d537398fdf4e94b583fc\\\",\\\"filepath\\\":\\\"src/components/slider/slider.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/slider/slider.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-slider-slider\\\",\\\"route\\\":\\\"/src-components-slider-slider\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"image-slider\\\",\\\"depth\\\":1,\\\"value\\\":\\\"Image Slider\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}}],\\\"props\\\":[{\\\"key\\\":\\\"src/App.jsx\\\",\\\"value\\\":[{\\\"description\\\":\\\"\\\",\\\"displayName\\\":\\\"App\\\",\\\"methods\\\":[{\\\"name\\\":\\\"increment\\\",\\\"docblock\\\":null,\\\"modifiers\\\":[],\\\"params\\\":[{\\\"name\\\":\\\"index\\\",\\\"type\\\":null}],\\\"returns\\\":null}],\\\"actualName\\\":\\\"App\\\"}]}]}\"}}}");
+module.exports = JSON.parse("{\"data\":{\"doczDb\":{\"id\":\"ace00e2b-9c46-5e24-a19a-5ed242ca9c64\",\"db\":\"{\\\"config\\\":{\\\"title\\\":\\\"React Components\\\",\\\"description\\\":\\\"My awesome app using docz\\\",\\\"menu\\\":[],\\\"repository\\\":null,\\\"native\\\":false,\\\"themeConfig\\\":{},\\\"separator\\\":\\\"-\\\",\\\"base\\\":\\\"/react-components\\\",\\\"dest\\\":\\\"./docs\\\",\\\"files\\\":\\\"**/*.{markdown,mdx}\\\"},\\\"entries\\\":[{\\\"key\\\":\\\"src/components/binaryClock/binaryClock.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Binary Clock\\\",\\\"id\\\":\\\"b76d9b90dd53dcc6054bb38a1307879e\\\",\\\"filepath\\\":\\\"src/components/binaryClock/binaryClock.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/binaryClock/binaryClock.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-binary-clock-binary-clock\\\",\\\"route\\\":\\\"/src-components-binary-clock-binary-clock\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"binaryclock\\\",\\\"depth\\\":1,\\\"value\\\":\\\"BinaryClock\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}},{\\\"key\\\":\\\"src/components/editor/editor.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Editor\\\",\\\"id\\\":\\\"5d208e1a6e7d5a4a742e64a1f9806b70\\\",\\\"filepath\\\":\\\"src/components/editor/editor.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/editor/editor.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-editor-editor\\\",\\\"route\\\":\\\"/src-components-editor-editor\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"description\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Description\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"},{\\\"slug\\\":\\\"dependencies\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Dependencies\\\"}]}},{\\\"key\\\":\\\"src/components/fileInput/fileInput.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Input file\\\",\\\"id\\\":\\\"d2b2eeffde29df0c6271bacabfbb757e\\\",\\\"filepath\\\":\\\"src/components/fileInput/fileInput.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/fileInput/fileInput.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-file-input-file-input\\\",\\\"route\\\":\\\"/src-components-file-input-file-input\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"inputfile\\\",\\\"depth\\\":1,\\\"value\\\":\\\"InputFile\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}},{\\\"key\\\":\\\"src/components/slider/slider.mdx\\\",\\\"value\\\":{\\\"name\\\":\\\"Slider\\\",\\\"id\\\":\\\"64945b17f9c9d537398fdf4e94b583fc\\\",\\\"filepath\\\":\\\"src/components/slider/slider.mdx\\\",\\\"fullpath\\\":\\\"/home/suso/proyectos/react-components/src/components/slider/slider.mdx\\\",\\\"link\\\":\\\"\\\",\\\"slug\\\":\\\"src-components-slider-slider\\\",\\\"route\\\":\\\"/src-components-slider-slider\\\",\\\"menu\\\":\\\"\\\",\\\"headings\\\":[{\\\"slug\\\":\\\"image-slider\\\",\\\"depth\\\":1,\\\"value\\\":\\\"Image Slider\\\"},{\\\"slug\\\":\\\"props\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Props\\\"},{\\\"slug\\\":\\\"basic-usage\\\",\\\"depth\\\":2,\\\"value\\\":\\\"Basic usage\\\"}]}}],\\\"props\\\":[{\\\"key\\\":\\\"src/App.jsx\\\",\\\"value\\\":[{\\\"description\\\":\\\"\\\",\\\"displayName\\\":\\\"App\\\",\\\"methods\\\":[{\\\"name\\\":\\\"increment\\\",\\\"docblock\\\":null,\\\"modifiers\\\":[],\\\"params\\\":[{\\\"name\\\":\\\"index\\\",\\\"type\\\":null}],\\\"returns\\\":null}],\\\"actualName\\\":\\\"App\\\"}]}]}\"}}}");
 
 /***/ }),
 

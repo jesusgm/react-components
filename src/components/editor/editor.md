@@ -15,9 +15,7 @@ Wysiwyg editor to enter text and format and styles with html
 
 ## Basic usage
 
-```html
-  <Editor value="Lorem ipsum dolor" onChange={value => console.log(value)} />
-```
+_Previsualización no disponible_
 
 ## Dependencies
 
