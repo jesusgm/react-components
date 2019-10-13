@@ -1,7 +1,20 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import TagCloud from "react-tag-cloud";
 import randomColor from "randomcolor";
 import "./styles.css";
+
+const propTypes = {
+  /** Array of tags.
+   * One tag must be have this structure:
+   *  {
+   *    id: number,
+   *    name: string,
+   *    percentage: number between 0 and 100
+   *  }
+   */
+  tags: PropTypes.arrayOf(PropTypes.object)
+};
 
 class MyTagCloud extends Component {
   componentDidMount() {
@@ -45,5 +58,7 @@ class MyTagCloud extends Component {
     );
   }
 }
+
+MyTagCloud.propTypes = propTypes;
 
 export default MyTagCloud;
