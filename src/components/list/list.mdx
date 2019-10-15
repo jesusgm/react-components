@@ -1,0 +1,43 @@
+---
+name: List
+---
+
+import { Playground, Props } from "docz";
+import List from "./index.jsx";
+
+# List
+
+## Props
+
+<Props of={List} />
+
+## Basic usage
+
+<Playground>
+  <List
+    identifier="id"
+    selected={2}
+    ListItem={item => (
+      <li className={item.selected ? "selected" : ""}>{item.name}</li>
+    )}
+  >
+    {[
+      {
+        id: 1,
+        name: "element1"
+      },
+      {
+        id: 2,
+        name: "element2"
+      },
+      {
+        id: 3,
+        name: "element3"
+      },
+      {
+        id: 4,
+        name: "element4"
+      }
+    ]}
+  </List>
+</Playground>

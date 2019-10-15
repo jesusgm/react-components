@@ -17,15 +17,23 @@ import "./App.css";
 // import { Draggable } from "react-drag-and-drop";
 // import DropableList from "./components/DropableList";
 
-import BinaryClock from "./components/binaryClock";
+// import BinaryClock from "./components/binaryClock";
 
-import Editor from "./components/editor";
+// import Editor from "./components/editor";
 
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
 
-import CodeHightligter from "./components/code-hightlighter";
+// import CodeHightligter from "./components/code-hightlighter";
 
 // import Lista from "./components/virtualized/lista";
+
+import List from "./components/list";
+
+const ItemList = props => (
+  <li className={props.className} onClick={props.onClick}>
+    {props.name}
+  </li>
+);
 
 library.add(faFile);
 library.add(faTimes);
@@ -46,7 +54,14 @@ class App extends Component {
 
     this.state = {
       rows,
-      editorValue: ""
+      editorValue: "",
+      elements: [
+        { id: 1, name: "element1" },
+        { id: 2, name: "element2" },
+        { id: 3, name: "element3" },
+        { id: 4, name: "element4" }
+      ],
+      selected: 2
     };
 
     this.increment = this.increment.bind(this);
@@ -65,17 +80,18 @@ class App extends Component {
       })
     });
   }
+
   render() {
     return (
       <div className="App">
-        <ReactMarkdown
+        {/* <ReactMarkdown
           source={"# This is a header\n\nAnd this is a paragraph"}
         />
         <CodeHightligter lang="python">
           var list = []; list.push(1); list.push(2); list.push(3);
           list.forEach(el => console.log(el));
         </CodeHightligter>
-        <BinaryClock />
+        <BinaryClock /> */}
         {/*
         <h2> File Input </h2>
         <FileInput
@@ -159,12 +175,21 @@ class App extends Component {
         /> */}
         {/* <hr />
          */}
-        <Editor
+        {/* <Editor
           value={this.state.editorValue}
           onChange={value => this.setState({ editorValue: value })}
-        />
+        /> */}
         {/* <hr /> */}
         {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
+
+        <List
+          ListItem={ItemList}
+          selected={this.state.selected}
+          onItemClick={item => this.setState({ selected: item.id })}
+          identifier="id"
+        >
+          {this.state.elements}
+        </List>
       </div>
     );
   }

@@ -10,6 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "i": "^0.3.6",
     "marksy": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "npm": "^6.8.0",
     "randomcolor": "^0.5.4",
     "react-drag-and-drop": "^3.0.0",
