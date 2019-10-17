@@ -18,6 +18,7 @@ import List from "./index.jsx";
   <List
     identifier="id"
     selected={2}
+    itemProps={{ isList: true, otherProp: "value" }}
     ListItem={item => (
       <li className={item.selected ? "selected" : ""}>{item.name}</li>
     )}

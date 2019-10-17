@@ -27,7 +27,8 @@ class List extends Component {
       selected,
       identifier,
       className,
-      onItemClick
+      onItemClick,
+      itemProps
     } = this.props;
     return (
       <div>
@@ -40,6 +41,7 @@ class List extends Component {
                     <ListItem
                       key={item[identifier || "id"]}
                       {...item}
+                      {...itemProps}
                       index={index}
                       className={`${isSelected ? "selected" : ""}`}
                       onClick={() => (onItemClick ? onItemClick(item) : null)}
@@ -50,6 +52,7 @@ class List extends Component {
                     <li
                       key={item[identifier || "id"]}
                       index={index}
+                      {...itemProps}
                       className={`${isSelected ? "selected" : ""}`}
                       onClick={() => (onItemClick ? onItemClick(item) : null)}
                     >
