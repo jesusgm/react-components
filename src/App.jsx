@@ -27,13 +27,14 @@ import "./App.css";
 
 // import Lista from "./components/virtualized/lista";
 
-import List from "./components/list";
+// import List from "./components/list";
+import Table from "./components/table";
 
-const ItemList = props => (
-  <li className={props.className} onClick={props.onClick}>
-    {props.name}
-  </li>
-);
+// const ItemList = props => (
+//   <li className={props.className} onClick={props.onClick}>
+//     {props.name}
+//   </li>
+// );
 
 library.add(faFile);
 library.add(faTimes);
@@ -47,7 +48,7 @@ class App extends Component {
     super(props);
 
     let rows = [];
-    const numRows = 9999;
+    const numRows = 999999;
     for (let i = 0; i < numRows; i++) {
       rows.push({ index: i, value: i });
     }
@@ -59,7 +60,31 @@ class App extends Component {
         { id: 1, name: "element1" },
         { id: 2, name: "element2" },
         { id: 3, name: "element3" },
-        { id: 4, name: "element4" }
+        { id: 4, name: "element4" },
+        { id: 5, name: "element5" },
+        { id: 6, name: "element6" },
+        { id: 7, name: "element7" },
+        { id: 8, name: "element8" },
+        { id: 9, name: "element9" },
+        { id: 10, name: "element10" },
+        { id: 11, name: "element11" },
+        { id: 12, name: "element12" },
+        { id: 13, name: "element13" },
+        { id: 14, name: "element14" },
+        { id: 15, name: "element15" },
+        { id: 16, name: "element16" },
+        { id: 17, name: "element17" },
+        { id: 18, name: "element18" },
+        { id: 19, name: "element19" },
+        { id: 20, name: "element20" },
+        { id: 21, name: "element21" },
+        { id: 22, name: "element22" },
+        { id: 23, name: "element23" },
+        { id: 24, name: "element24" },
+        { id: 26, name: "element25" },
+        { id: 27, name: "element26" },
+        { id: 28, name: "element27" },
+        { id: 19, name: "element28" }
       ],
       selected: 2
     };
@@ -182,14 +207,20 @@ class App extends Component {
         {/* <hr /> */}
         {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
 
-        <List
+        {/* <List
           ListItem={ItemList}
           selected={this.state.selected}
           onItemClick={item => this.setState({ selected: item.id })}
           identifier="id"
         >
           {this.state.elements}
-        </List>
+        </List> */}
+
+        <Table
+          headers={["Id", "Name"]}
+          rows={this.state.rows}
+          pagination={{ pageSize: 5 }}
+        />
       </div>
     );
   }
