@@ -51,6 +51,9 @@ class Table extends Component {
 
   renderHeader() {
     const { headers } = this.props;
+    if (!headers) {
+      return null;
+    }
     return (
       <thead className="table-header table-row">
         <tr>

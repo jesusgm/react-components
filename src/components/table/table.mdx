@@ -15,5 +15,13 @@ import Table from "./index.jsx";
 ## Basic usage
 
 <Playground>
-  <Table />
+  <Table
+    headers={["Id", "Name"]}
+    rows={[
+      { id: 1, name: "uno" },
+      { id: 2, name: "dos" },
+      { id: 3, name: "tres" }
+    ]}
+    pagination={{ pageSize: 5 }}
+  />
 </Playground>
