@@ -1,5 +1,19 @@
 language: node_js
 node_js: "12"
 cache: yarn
-script: 
-  - "npm run doc:build"
+jobs:
+  include:
+    - stage: test
+      script:
+        - "npm run test"
+    - stage: deploy
+      script:
+        - "npm run build"
+        - "npm run doc:build"
+stages:
+  - name: test
+    # require the type to be a PR
+    if: type = pull_request
+  - name: deploy
+    # require the type to be push to master
+    if: type = push AND branch = master
