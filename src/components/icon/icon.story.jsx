@@ -1,13 +1,11 @@
 import React from "react";
 import Icon from "./index";
 
-export default { title: "Button" };
+export default { title: "Icons" };
 
-export const Icons = () => (
+export const FontAwesome = () => (
   <div>
-    <h1>Componente Icon</h1>
-
-    <h3>Font Awesome</h3>
+    <h3>Icon FontAwesome</h3>
     <Icon font="fa" name="times" />
     <Icon font="fa" name="times" size="2x" />
     <Icon font="fa" name="bars" />
@@ -17,8 +15,12 @@ export const Icons = () => (
     <Icon font="fa" name="info-circle" />
     <Icon font="fa" name="spinner" spin />
     <Icon font="fa" name="spinner" pulse size="3x" />
+  </div>
+);
 
-    <h3>Line Awesome</h3>
+export const LineAwesome = () => (
+  <div>
+    <h3>Icon LineAwesome</h3>
     <Icon font="la" name="automobile" />
     <Icon font="la" name="bell" />
     <Icon font="la" name="paw" />

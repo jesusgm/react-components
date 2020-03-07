@@ -2,12 +2,12 @@ import React from "react";
 import "./font-awesome/css/all.min.css";
 import "./line-awesome/css/line-awesome.min.css";
 
-function Icon({ font, name, brand, spin, size, pulse }) {
+function Icon({ font, name, brand, spin, size, pulse, className }) {
   return (
     <span
       className={`icon ${spin ? "fa-spin" : ""} ${pulse ? "fa-pulse" : ""} ${
         brand ? "fab" : "fa"
-      } ${size ? `fa-${size}` : ""} ${font}-${name}`}
+      } ${size ? `fa-${size}` : ""} ${font}-${name} ${className}`}
     />
   );
 }
@@ -17,7 +17,8 @@ Icon.defaultProps = {
   brand: false,
   spin: false,
   pulse: false,
-  size: ""
+  size: "",
+  className: ""
 };
 
 export default Icon;

@@ -21,7 +21,6 @@ class Editor extends Component {
     const { onChange, value } = this.props;
     return (
       <div>
-        <h2>Editor</h2>
         <CKEditor
           editor={ClassicEditor}
           data={value}

@@ -30,7 +30,9 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "storybook:dev": "start-storybook",
-    "storybook:build": "build-storybook -c .storybook -o docs"
+    "storybook:build": "build-storybook -c .storybook -o docs",
+    "doc:dev": "npm run storybook:dev",
+    "doc:build": "npm run storybook:build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,10 +44,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/core": "^7.8.6",
     "@storybook/addon-storysource": "^5.3.14",
     "@storybook/react": "^5.3.14",
-    "babel-loader": "^8.0.6",
     "docz": "^2.0.0-rc.52",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
+import Icon from "../icon/";
 import "./style.css";
 
 const propTypes = {
@@ -44,17 +45,13 @@ class BinaryClock extends Component {
       <div className="bclock">
         {binaryArray.map((b, i) => {
           return (
-            <FontAwesomeIcon
+            <Icon
               key={i}
+              font="fa"
+              name="circle"
               className={b === "0" ? "empty" : "full"}
-              icon={"circle"}
             />
           );
-          // if (b === "0") {
-          //   return <input disabled key={i} type="radio" />;
-          // } else {
-          //   return <input disabled key={i} type="radio" checked="checked" />;
-          // }
         })}
       </div>
     );
