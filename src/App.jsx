@@ -6,7 +6,7 @@ import {
   faArrowRight,
   faArrowLeft,
   faCircle,
-  faCheckCircle
+  faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./App.css";
@@ -28,9 +28,11 @@ import "./App.css";
 // import Lista from "./components/virtualized/lista";
 
 // import List from "./components/list";
-import Table from "./components/table";
+//import Table from "./components/table";
 
-import Icon from "./components/icon/";
+//import Icon from "./components/icon/";
+
+import VideoPlayer from "./components/youtube-player/";
 
 // const ItemList = props => (
 //   <li className={props.className} onClick={props.onClick}>
@@ -86,9 +88,9 @@ class App extends Component {
         { id: 26, name: "element25" },
         { id: 27, name: "element26" },
         { id: 28, name: "element27" },
-        { id: 19, name: "element28" }
+        { id: 19, name: "element28" },
       ],
-      selected: 2
+      selected: 2,
     };
 
     this.increment = this.increment.bind(this);
@@ -96,22 +98,22 @@ class App extends Component {
 
   increment(index) {
     this.setState({
-      rows: this.state.rows.map(row => {
+      rows: this.state.rows.map((row) => {
         if (row.index === index) {
           return {
             ...row,
-            value: row.value + 1
+            value: row.value + 1,
           };
         }
         return row;
-      })
+      }),
     });
   }
 
   render() {
     return (
-      <div className="App">
-        <h2>Icons</h2>
+      <div className="App container">
+        {/*<h2>Icons</h2>
         <h3>Font Awesome</h3>
         <Icon font="fa" name="times" />
         <Icon font="fa" name="times" size="2x" />
@@ -132,7 +134,7 @@ class App extends Component {
         <Icon font="la" name="recycle" />
         <Icon font="la" name="music" />
         <Icon font="la" name="sync-alt" spin />
-        <Icon font="la" name="sync-alt" pulse />
+        <Icon font="la" name="sync-alt" pulse />*/}
         {/* <ReactMarkdown
           source={"# This is a header\n\nAnd this is a paragraph"}
         />
@@ -240,11 +242,13 @@ class App extends Component {
           {this.state.elements}
         </List> */}
 
-        <Table
+        {/* <Table
           headers={["Id", "Name"]}
           rows={this.state.rows}
           pagination={{ pageSize: 5 }}
-        />
+        /> */}
+
+        <VideoPlayer src="https://www.youtube.com/embed/sOnqjkJTMaA" />
       </div>
     );
   }

@@ -11,7 +11,12 @@ html,
 body,
 .root,
 .App {
-  height: 100%;
+  height: 100vh;
   display: block;
   background: #ddd;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
 }
