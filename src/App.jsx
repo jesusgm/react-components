@@ -24,8 +24,9 @@ import "./App.css";
 
 // import VideoPlayer from "./components/youtube-player/";
 
-import Presenter from "./components/presenter";
-import slides from "./components/presenter/slides.json";
+// import Presenter from "./components/presenter";
+// import slides from "./components/presenter/slides.json";
+import Chart from "./components/chart";
 
 // const ItemList = props => (
 //   <li className={props.className} onClick={props.onClick}>
@@ -100,143 +101,140 @@ class App extends Component {
     return (
       <div className="App container">
         {/*<h2>Icons</h2>
-        <h3>Font Awesome</h3>
-        <Icon font="fa" name="times" />
-        <Icon font="fa" name="times" size="2x" />
-        <Icon font="fa" name="bars" />
-        <Icon font="fa" name="arrow-right" />
-        <Icon font="fa" name="arrow-circle-up" />
-        <Icon font="fa" name="angle-double-up" />
-        <Icon font="fa" name="info-circle" />
-        <Icon font="fa" name="spinner" spin />
-        <Icon font="fa" name="spinner" pulse size="3x" />
+                <h3>Font Awesome</h3>
+                <Icon font="fa" name="times" />
+                <Icon font="fa" name="times" size="2x" />
+                <Icon font="fa" name="bars" />
+                <Icon font="fa" name="arrow-right" />
+                <Icon font="fa" name="arrow-circle-up" />
+                <Icon font="fa" name="angle-double-up" />
+                <Icon font="fa" name="info-circle" />
+                <Icon font="fa" name="spinner" spin />
+                <Icon font="fa" name="spinner" pulse size="3x" />
 
-        <h3>Line Awesome</h3>
-        <Icon font="la" name="automobile" />
-        <Icon font="la" name="bell" />
-        <Icon font="la" name="paw" />
-        <Icon font="la" name="times" />
-        <Icon font="la" name="angle-double-down" />
-        <Icon font="la" name="recycle" />
-        <Icon font="la" name="music" />
-        <Icon font="la" name="sync-alt" spin />
-        <Icon font="la" name="sync-alt" pulse />*/}
+                <h3>Line Awesome</h3>
+                <Icon font="la" name="automobile" />
+                <Icon font="la" name="bell" />
+                <Icon font="la" name="paw" />
+                <Icon font="la" name="times" />
+                <Icon font="la" name="angle-double-down" />
+                <Icon font="la" name="recycle" />
+                <Icon font="la" name="music" />
+                <Icon font="la" name="sync-alt" spin />
+                <Icon font="la" name="sync-alt" pulse />*/}
         {/* <ReactMarkdown
-          source={"# This is a header\n\nAnd this is a paragraph"}
-        />
-        <CodeHightligter lang="python">
-          var list = []; list.push(1); list.push(2); list.push(3);
-          list.forEach(el => console.log(el));
-        </CodeHightligter>
-        <BinaryClock /> */}
+                  source={"# This is a header\n\nAnd this is a paragraph"}
+                />
+                <CodeHightligter lang="python">
+                  var list = []; list.push(1); list.push(2); list.push(3);
+                  list.forEach(el => console.log(el));
+                </CodeHightligter>
+                <BinaryClock /> */}
         {/*
-        <h2> File Input </h2>
-        <FileInput
-          name="upload-file"
-          onChange={files => console.log(files)}
-          value={
-            [
-              // {
-              //   name: "file.txt"
-              // }
-            ]
-          }
-        />
-        <hr /> */}
+                <h2> File Input </h2>
+                <FileInput
+                  name="upload-file"
+                  onChange={files => console.log(files)}
+                  value={
+                    [
+                      // {
+                      //   name: "file.txt"
+                      // }
+                    ]
+                  }
+                />
+                <hr /> */}
         {/* <ConflictsResolver
-          conflicts={[
-            {
-              id: 1,
-              local: "aaa",
-              remote: "aab"
-            },
-            {
-              id: 2,
-              local: "123",
-              remote: "adfadsf"
-            },
-            {
-              id: 3,
-              local: "aaad",
-              remote: "aabd"
-            },
-            {
-              id: 4,
-              local: "www",
-              remote: "eee"
-            },
-            {
-              id: 5,
-              local: "afdadf",
-              remote: "adfadff"
-            }
-          ]}
-        />
-        <hr /> */}
+                  conflicts={[
+                    {
+                      id: 1,
+                      local: "aaa",
+                      remote: "aab"
+                    },
+                    {
+                      id: 2,
+                      local: "123",
+                      remote: "adfadsf"
+                    },
+                    {
+                      id: 3,
+                      local: "aaad",
+                      remote: "aabd"
+                    },
+                    {
+                      id: 4,
+                      local: "www",
+                      remote: "eee"
+                    },
+                    {
+                      id: 5,
+                      local: "afdadf",
+                      remote: "adfadff"
+                    }
+                  ]}
+                />
+                <hr /> */}
         {/* <Draggable
-          type="listitem"
-          data={JSON.stringify({
-            name: "item1",
-            id: 1
-          })}
-        >
-          Item 1
-        </Draggable>
-        <Draggable
-          type="listitem"
-          data={JSON.stringify({
-            name: "item2",
-            id: 2
-          })}
-        >
-          Item 2
-        </Draggable>
-        <Draggable
-          type="listitem"
-          data={JSON.stringify({
-            name: "item3",
-            id: 3
-          })}
-        >
-          Item 3
-        </Draggable>
-        <hr /> */}
+                  type="listitem"
+                  data={JSON.stringify({
+                    name: "item1",
+                    id: 1
+                  })}
+                >
+                  Item 1
+                </Draggable>
+                <Draggable
+                  type="listitem"
+                  data={JSON.stringify({
+                    name: "item2",
+                    id: 2
+                  })}
+                >
+                  Item 2
+                </Draggable>
+                <Draggable
+                  type="listitem"
+                  data={JSON.stringify({
+                    name: "item3",
+                    id: 3
+                  })}
+                >
+                  Item 3
+                </Draggable>
+                <hr /> */}
         {/* <DropableList
-          value={[
-            {
-              name: "item2",
-              id: 2
-            }
-          ]}
-          types={["listitem"]}
-        /> */}
+                  value={[
+                    {
+                      name: "item2",
+                      id: 2
+                    }
+                  ]}
+                  types={["listitem"]}
+                /> */}
         {/* <hr />
          */}
         {/* <Editor
-          value={this.state.editorValue}
-          onChange={value => this.setState({ editorValue: value })}
-        /> */}
+                  value={this.state.editorValue}
+                  onChange={value => this.setState({ editorValue: value })}
+                /> */}
         {/* <hr /> */}
         {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
-
         {/* <List
-          ListItem={ItemList}
-          selected={this.state.selected}
-          onItemClick={item => this.setState({ selected: item.id })}
-          identifier="id"
-        >
-          {this.state.elements}
-        </List> */}
-
+                  ListItem={ItemList}
+                  selected={this.state.selected}
+                  onItemClick={item => this.setState({ selected: item.id })}
+                  identifier="id"
+                >
+                  {this.state.elements}
+                </List> */}
         {/* <Table
-          headers={["Id", "Name"]}
-          rows={this.state.rows}
-          pagination={{ pageSize: 5 }}
-        /> */}
-
+                  headers={["Id", "Name"]}
+                  rows={this.state.rows}
+                  pagination={{ pageSize: 5 }}
+                /> */}
         {/* <VideoPlayer src="https://www.youtube.com/embed/sOnqjkJTMaA" /> */}
-
-        <Presenter slides={slides} />
+        {/* <Presenter slides={slides} /> */}
+        <Chart />
       </div>
     );
   }
