@@ -13,10 +13,23 @@ body,
 .App {
   height: 100vh;
   display: block;
-  background: #ddd;
+  /* background: #ddd; */
 }
 
 .container {
   max-width: 1024px;
   margin: auto;
+}
+
+body {
+  background: linear-gradient(45deg, #57003f 0%, #f57453 100%);
+  font-family: 'Ubuntu';
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 }

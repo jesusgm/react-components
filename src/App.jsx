@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 // import FileInput from "./components/fileInput";
@@ -26,7 +26,8 @@ import "./App.css";
 
 // import Presenter from "./components/presenter";
 // import slides from "./components/presenter/slides.json";
-import Chart from "./components/chart";
+// import Chart from "./components/chart";
+import Terminal from "./components/terminal";
 
 // const ItemList = props => (
 //   <li className={props.className} onClick={props.onClick}>
@@ -34,73 +35,73 @@ import Chart from "./components/chart";
 //   </li>
 // );
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const App = () => {
+  const [command, setCommand] = useState("");
+  // constructor(props) {
+  //   super(props);
 
-    //   let rows = [];
-    //   const numRows = 999999;
-    //   for (let i = 0; i < numRows; i++) {
-    //     rows.push({ index: i, value: i });
-    //   }
+  //   let rows = [];
+  //   const numRows = 999999;
+  //   for (let i = 0; i < numRows; i++) {
+  //     rows.push({ index: i, value: i });
+  //   }
 
-    //   this.state = {
-    //     rows,
-    //     editorValue: "",
-    //     elements: [
-    //       { id: 1, name: "element1" },
-    //       { id: 2, name: "element2" },
-    //       { id: 3, name: "element3" },
-    //       { id: 4, name: "element4" },
-    //       { id: 5, name: "element5" },
-    //       { id: 6, name: "element6" },
-    //       { id: 7, name: "element7" },
-    //       { id: 8, name: "element8" },
-    //       { id: 9, name: "element9" },
-    //       { id: 10, name: "element10" },
-    //       { id: 11, name: "element11" },
-    //       { id: 12, name: "element12" },
-    //       { id: 13, name: "element13" },
-    //       { id: 14, name: "element14" },
-    //       { id: 15, name: "element15" },
-    //       { id: 16, name: "element16" },
-    //       { id: 17, name: "element17" },
-    //       { id: 18, name: "element18" },
-    //       { id: 19, name: "element19" },
-    //       { id: 20, name: "element20" },
-    //       { id: 21, name: "element21" },
-    //       { id: 22, name: "element22" },
-    //       { id: 23, name: "element23" },
-    //       { id: 24, name: "element24" },
-    //       { id: 26, name: "element25" },
-    //       { id: 27, name: "element26" },
-    //       { id: 28, name: "element27" },
-    //       { id: 19, name: "element28" },
-    //     ],
-    //     selected: 2,
-    //   };
+  //   this.state = {
+  //     rows,
+  //     editorValue: "",
+  //     elements: [
+  //       { id: 1, name: "element1" },
+  //       { id: 2, name: "element2" },
+  //       { id: 3, name: "element3" },
+  //       { id: 4, name: "element4" },
+  //       { id: 5, name: "element5" },
+  //       { id: 6, name: "element6" },
+  //       { id: 7, name: "element7" },
+  //       { id: 8, name: "element8" },
+  //       { id: 9, name: "element9" },
+  //       { id: 10, name: "element10" },
+  //       { id: 11, name: "element11" },
+  //       { id: 12, name: "element12" },
+  //       { id: 13, name: "element13" },
+  //       { id: 14, name: "element14" },
+  //       { id: 15, name: "element15" },
+  //       { id: 16, name: "element16" },
+  //       { id: 17, name: "element17" },
+  //       { id: 18, name: "element18" },
+  //       { id: 19, name: "element19" },
+  //       { id: 20, name: "element20" },
+  //       { id: 21, name: "element21" },
+  //       { id: 22, name: "element22" },
+  //       { id: 23, name: "element23" },
+  //       { id: 24, name: "element24" },
+  //       { id: 26, name: "element25" },
+  //       { id: 27, name: "element26" },
+  //       { id: 28, name: "element27" },
+  //       { id: 19, name: "element28" },
+  //     ],
+  //     selected: 2,
+  //   };
 
-    //   this.increment = this.increment.bind(this);
-    // }
+  //   this.increment = this.increment.bind(this);
+  // }
 
-    // increment(index) {
-    //   this.setState({
-    //     rows: this.state.rows.map((row) => {
-    //       if (row.index === index) {
-    //         return {
-    //           ...row,
-    //           value: row.value + 1,
-    //         };
-    //       }
-    //       return row;
-    //     }),
-    //   });
-  }
+  // increment(index) {
+  //   this.setState({
+  //     rows: this.state.rows.map((row) => {
+  //       if (row.index === index) {
+  //         return {
+  //           ...row,
+  //           value: row.value + 1,
+  //         };
+  //       }
+  //       return row;
+  //     }),
+  //   });
+  //}
 
-  render() {
-    return (
-      <div className="App container">
-        {/*<h2>Icons</h2>
+  return (
+    <div className="App container">
+      {/*<h2>Icons</h2>
                 <h3>Font Awesome</h3>
                 <Icon font="fa" name="times" />
                 <Icon font="fa" name="times" size="2x" />
@@ -122,7 +123,7 @@ class App extends Component {
                 <Icon font="la" name="music" />
                 <Icon font="la" name="sync-alt" spin />
                 <Icon font="la" name="sync-alt" pulse />*/}
-        {/* <ReactMarkdown
+      {/* <ReactMarkdown
                   source={"# This is a header\n\nAnd this is a paragraph"}
                 />
                 <CodeHightligter lang="python">
@@ -130,7 +131,7 @@ class App extends Component {
                   list.forEach(el => console.log(el));
                 </CodeHightligter>
                 <BinaryClock /> */}
-        {/*
+      {/*
                 <h2> File Input </h2>
                 <FileInput
                   name="upload-file"
@@ -144,7 +145,7 @@ class App extends Component {
                   }
                 />
                 <hr /> */}
-        {/* <ConflictsResolver
+      {/* <ConflictsResolver
                   conflicts={[
                     {
                       id: 1,
@@ -174,7 +175,7 @@ class App extends Component {
                   ]}
                 />
                 <hr /> */}
-        {/* <Draggable
+      {/* <Draggable
                   type="listitem"
                   data={JSON.stringify({
                     name: "item1",
@@ -202,7 +203,7 @@ class App extends Component {
                   Item 3
                 </Draggable>
                 <hr /> */}
-        {/* <DropableList
+      {/* <DropableList
                   value={[
                     {
                       name: "item2",
@@ -211,15 +212,15 @@ class App extends Component {
                   ]}
                   types={["listitem"]}
                 /> */}
-        {/* <hr />
-         */}
-        {/* <Editor
+      {/* <hr />
+       */}
+      {/* <Editor
                   value={this.state.editorValue}
                   onChange={value => this.setState({ editorValue: value })}
                 /> */}
-        {/* <hr /> */}
-        {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
-        {/* <List
+      {/* <hr /> */}
+      {/* <Lista rows={this.state.rows} increment={this.increment} /> */}
+      {/* <List
                   ListItem={ItemList}
                   selected={this.state.selected}
                   onItemClick={item => this.setState({ selected: item.id })}
@@ -227,17 +228,27 @@ class App extends Component {
                 >
                   {this.state.elements}
                 </List> */}
-        {/* <Table
+      {/* <Table
                   headers={["Id", "Name"]}
                   rows={this.state.rows}
                   pagination={{ pageSize: 5 }}
                 /> */}
-        {/* <VideoPlayer src="https://www.youtube.com/embed/sOnqjkJTMaA" /> */}
-        {/* <Presenter slides={slides} /> */}
-        <Chart />
-      </div>
-    );
-  }
-}
+      {/* <VideoPlayer src="https://www.youtube.com/embed/sOnqjkJTMaA" /> */}
+      {/* <Presenter slides={slides} /> */}
+      {/* <Chart /> */}
+      <Terminal
+        onCommand={(c) => {
+          if (c === "clear") {
+            setCommand("");
+          } else {
+            setCommand(`${command}\n${c}`);
+          }
+        }}
+      >
+        {command}
+      </Terminal>
+    </div>
+  );
+};
 
 export default App;
