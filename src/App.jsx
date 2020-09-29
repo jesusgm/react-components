@@ -27,7 +27,7 @@ import Icon from "./components/icon/";
 // import Presenter from "./components/presenter";
 // import slides from "./components/presenter/slides.json";
 // import Chart from "./components/chart";
-import Terminal from "./components/terminal";
+// import Terminal from "./components/terminal";
 
 // const ItemList = props => (
 //   <li className={props.className} onClick={props.onClick}>
@@ -36,7 +36,7 @@ import Terminal from "./components/terminal";
 // );
 
 const App = () => {
-  const [command, setCommand] = useState("");
+  // const [command, setCommand] = useState("");
   // constructor(props) {
   //   super(props);
 
