@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[410],{1372:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/collection-fill.9c943c00.svg"}}]);
+//# sourceMappingURL=410.6fedc0a3f7f7d935553d.bundle.js.map

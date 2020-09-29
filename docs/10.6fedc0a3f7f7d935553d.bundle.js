@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{972:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/align-top.e442fd4d.svg"}}]);
+//# sourceMappingURL=10.6fedc0a3f7f7d935553d.bundle.js.map

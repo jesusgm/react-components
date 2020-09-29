@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[617],{1579:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/file-zip-fill.d18ca612.svg"}}]);
+//# sourceMappingURL=617.6fedc0a3f7f7d935553d.bundle.js.map

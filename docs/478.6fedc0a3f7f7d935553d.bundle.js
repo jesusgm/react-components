@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[478],{1440:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/egg-fried.4d1fbc67.svg"}}]);
+//# sourceMappingURL=478.6fedc0a3f7f7d935553d.bundle.js.map

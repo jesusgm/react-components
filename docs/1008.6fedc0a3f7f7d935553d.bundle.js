@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1008],{1970:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/suit-spade-fill.59b59860.svg"}}]);
+//# sourceMappingURL=1008.6fedc0a3f7f7d935553d.bundle.js.map

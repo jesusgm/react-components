@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[904],{1866:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/receipt-cutoff.82c95281.svg"}}]);
+//# sourceMappingURL=904.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[836],{1798:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/patch-minus.94d7218f.svg"}}]);
+//# sourceMappingURL=836.6fedc0a3f7f7d935553d.bundle.js.map

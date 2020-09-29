@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1015],{1977:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/tablet-landscape.fa724655.svg"}}]);
+//# sourceMappingURL=1015.6fedc0a3f7f7d935553d.bundle.js.map

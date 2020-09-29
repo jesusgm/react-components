@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[648],{1610:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/front.7ae4e226.svg"}}]);
+//# sourceMappingURL=648.6fedc0a3f7f7d935553d.bundle.js.map

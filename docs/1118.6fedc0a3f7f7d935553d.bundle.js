@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1118],{2080:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/x-octagon.81bae38b.svg"}}]);
+//# sourceMappingURL=1118.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[788],{1750:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/mailbox.017c7fe4.svg"}}]);
+//# sourceMappingURL=788.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[888],{1850:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/plus-square.2dc64575.svg"}}]);
+//# sourceMappingURL=888.6fedc0a3f7f7d935553d.bundle.js.map

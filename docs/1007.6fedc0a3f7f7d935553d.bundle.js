@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1007],{1969:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/suit-heart.7ca785d9.svg"}}]);
+//# sourceMappingURL=1007.6fedc0a3f7f7d935553d.bundle.js.map

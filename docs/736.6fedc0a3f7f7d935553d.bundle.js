@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[736],{1698:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/journal-code.8120cbaa.svg"}}]);
+//# sourceMappingURL=736.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[188],{1150:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/briefcase-fill.c6270461.svg"}}]);
+//# sourceMappingURL=188.6fedc0a3f7f7d935553d.bundle.js.map

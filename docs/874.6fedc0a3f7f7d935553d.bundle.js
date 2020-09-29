@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[874],{1836:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/phone-landscape.2deb5e36.svg"}}]);
+//# sourceMappingURL=874.6fedc0a3f7f7d935553d.bundle.js.map

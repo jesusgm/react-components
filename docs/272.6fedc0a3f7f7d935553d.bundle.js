@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[272],{1234:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/camera-video.6e7270c5.svg"}}]);
+//# sourceMappingURL=272.6fedc0a3f7f7d935553d.bundle.js.map

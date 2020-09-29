@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1087],{2049:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/upc-scan.6ef59302.svg"}}]);
+//# sourceMappingURL=1087.6fedc0a3f7f7d935553d.bundle.js.map

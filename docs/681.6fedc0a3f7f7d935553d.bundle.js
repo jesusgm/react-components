@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[681],{1643:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/hand-index-thumb.d964ea19.svg"}}]);
+//# sourceMappingURL=681.6fedc0a3f7f7d935553d.bundle.js.map

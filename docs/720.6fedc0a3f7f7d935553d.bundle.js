@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[720],{1682:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/inbox-fill.fc418030.svg"}}]);
+//# sourceMappingURL=720.6fedc0a3f7f7d935553d.bundle.js.map

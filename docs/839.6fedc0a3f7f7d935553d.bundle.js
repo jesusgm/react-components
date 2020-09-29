@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[839],{1801:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/patch-question-fll.bcadc489.svg"}}]);
+//# sourceMappingURL=839.6fedc0a3f7f7d935553d.bundle.js.map

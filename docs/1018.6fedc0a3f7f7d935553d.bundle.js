@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1018],{1980:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/tag.5891223f.svg"}}]);
+//# sourceMappingURL=1018.6fedc0a3f7f7d935553d.bundle.js.map

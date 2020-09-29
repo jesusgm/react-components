@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[147],{1109:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/bookmark-fill.6bb66745.svg"}}]);
+//# sourceMappingURL=147.6fedc0a3f7f7d935553d.bundle.js.map

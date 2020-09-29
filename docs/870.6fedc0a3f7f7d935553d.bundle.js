@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[870],{1832:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/person-x.66941f57.svg"}}]);
+//# sourceMappingURL=870.6fedc0a3f7f7d935553d.bundle.js.map

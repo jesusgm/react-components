@@ -32,3 +32,16 @@ export const LineAwesome = () => (
     <Icon font="la" name="sync-alt" pulse />
   </div>
 );
+
+export const Bootstrap = () => (
+  <div>
+    <h3>Icon Bootstrap</h3>
+    <Icon font="bootstrap" name="table" />
+    <Icon font="bootstrap" name="bell" />
+    <Icon font="bootstrap" name="tablet" />
+    <Icon font="bootstrap" name="tag" />
+    <Icon font="bootstrap" name="thermometer" />
+    <Icon font="bootstrap" name="trash" />
+    <Icon font="bootstrap" name="tree" />
+  </div>
+);

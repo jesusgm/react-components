@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1041],{2003:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/text-paragraph.c35e1a9e.svg"}}]);
+//# sourceMappingURL=1041.6fedc0a3f7f7d935553d.bundle.js.map

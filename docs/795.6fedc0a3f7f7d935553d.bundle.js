@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[795],{1757:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/menu-app.22f7c46f.svg"}}]);
+//# sourceMappingURL=795.6fedc0a3f7f7d935553d.bundle.js.map

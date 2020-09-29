@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[380],{1342:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/clipboard-check.2bcd42fb.svg"}}]);
+//# sourceMappingURL=380.6fedc0a3f7f7d935553d.bundle.js.map

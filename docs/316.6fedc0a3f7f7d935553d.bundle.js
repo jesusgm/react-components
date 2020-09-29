@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[316],{1278:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/chat-fill.32390cdd.svg"}}]);
+//# sourceMappingURL=316.6fedc0a3f7f7d935553d.bundle.js.map

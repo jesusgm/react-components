@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[179],{1141:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/box-arrow-left.0b3a6b61.svg"}}]);
+//# sourceMappingURL=179.6fedc0a3f7f7d935553d.bundle.js.map

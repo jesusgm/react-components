@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[735],{1697:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/journal-check.aff2b6b6.svg"}}]);
+//# sourceMappingURL=735.6fedc0a3f7f7d935553d.bundle.js.map

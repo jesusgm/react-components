@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[127],{1089:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/battery-charging.530ed2be.svg"}}]);
+//# sourceMappingURL=127.6fedc0a3f7f7d935553d.bundle.js.map

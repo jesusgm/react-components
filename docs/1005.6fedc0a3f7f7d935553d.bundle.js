@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1005],{1967:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/suit-diamond.b878f7a7.svg"}}]);
+//# sourceMappingURL=1005.6fedc0a3f7f7d935553d.bundle.js.map

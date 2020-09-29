@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1105],{2067:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/wallet2.b91a7cd1.svg"}}]);
+//# sourceMappingURL=1105.6fedc0a3f7f7d935553d.bundle.js.map

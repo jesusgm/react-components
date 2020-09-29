@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[460],{1422:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/dice-6.a078a55f.svg"}}]);
+//# sourceMappingURL=460.6fedc0a3f7f7d935553d.bundle.js.map

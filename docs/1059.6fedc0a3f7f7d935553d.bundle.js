@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1059],{2021:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/trash2-fill.bb1e6edf.svg"}}]);
+//# sourceMappingURL=1059.6fedc0a3f7f7d935553d.bundle.js.map

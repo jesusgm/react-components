@@ -20,7 +20,7 @@ import "./App.css";
 // import List from "./components/list";
 //import Table from "./components/table";
 
-//import Icon from "./components/icon/";
+import Icon from "./components/icon/";
 
 // import VideoPlayer from "./components/youtube-player/";
 
@@ -123,6 +123,14 @@ const App = () => {
                 <Icon font="la" name="music" />
                 <Icon font="la" name="sync-alt" spin />
                 <Icon font="la" name="sync-alt" pulse />*/}
+      <h3>Bootstrap</h3>
+      <Icon font="bootstrap" name="table" />
+      <Icon font="bootstrap" name="bell" />
+      <Icon font="bootstrap" name="tablet" />
+      <Icon font="bootstrap" name="tag" />
+      <Icon font="bootstrap" name="thermometer" />
+      <Icon font="bootstrap" name="trash" />
+      <Icon font="bootstrap" name="tree" />
       {/* <ReactMarkdown
                   source={"# This is a header\n\nAnd this is a paragraph"}
                 />
@@ -236,7 +244,7 @@ const App = () => {
       {/* <VideoPlayer src="https://www.youtube.com/embed/sOnqjkJTMaA" /> */}
       {/* <Presenter slides={slides} /> */}
       {/* <Chart /> */}
-      <Terminal
+      {/*<Terminal
         onCommand={(c) => {
           if (c === "clear") {
             setCommand("");
@@ -246,7 +254,7 @@ const App = () => {
         }}
       >
         {command}
-      </Terminal>
+      </Terminal>*/}
     </div>
   );
 };

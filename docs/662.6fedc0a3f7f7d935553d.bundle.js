@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[662],{1624:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/gift-fill.24a1a470.svg"}}]);
+//# sourceMappingURL=662.6fedc0a3f7f7d935553d.bundle.js.map

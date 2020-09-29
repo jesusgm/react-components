@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[879],{1841:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/pip-fill.a4234439.svg"}}]);
+//# sourceMappingURL=879.6fedc0a3f7f7d935553d.bundle.js.map

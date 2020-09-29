@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[494],{1456:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/envelope.1d61a504.svg"}}]);
+//# sourceMappingURL=494.6fedc0a3f7f7d935553d.bundle.js.map

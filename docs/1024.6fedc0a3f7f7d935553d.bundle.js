@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1024],{1986:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/telephone-inbound-fill.f6866a9a.svg"}}]);
+//# sourceMappingURL=1024.6fedc0a3f7f7d935553d.bundle.js.map

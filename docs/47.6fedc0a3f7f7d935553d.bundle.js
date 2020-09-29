@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[47],{1009:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/arrow-left-square-fill.3f8c01ac.svg"}}]);
+//# sourceMappingURL=47.6fedc0a3f7f7d935553d.bundle.js.map

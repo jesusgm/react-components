@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1061],{2023:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/tree-fill.97b52c39.svg"}}]);
+//# sourceMappingURL=1061.6fedc0a3f7f7d935553d.bundle.js.map

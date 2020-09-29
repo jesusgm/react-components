@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[436],{1398:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/cursor.abce9a1d.svg"}}]);
+//# sourceMappingURL=436.6fedc0a3f7f7d935553d.bundle.js.map

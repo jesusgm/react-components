@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[125],{1087:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/basket3-fill.f7258fc9.svg"}}]);
+//# sourceMappingURL=125.6fedc0a3f7f7d935553d.bundle.js.map

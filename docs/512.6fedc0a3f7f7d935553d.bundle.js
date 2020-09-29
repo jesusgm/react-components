@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[512],{1474:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/file-arrow-down-fill.049e064e.svg"}}]);
+//# sourceMappingURL=512.6fedc0a3f7f7d935553d.bundle.js.map

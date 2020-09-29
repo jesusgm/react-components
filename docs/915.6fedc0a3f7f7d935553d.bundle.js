@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[915],{1877:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/rss-fill.86f5f5ad.svg"}}]);
+//# sourceMappingURL=915.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[184],{1146:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/box-seam.de614e28.svg"}}]);
+//# sourceMappingURL=184.6fedc0a3f7f7d935553d.bundle.js.map

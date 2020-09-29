@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[613],{1575:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/file-text-fill.c1f75323.svg"}}]);
+//# sourceMappingURL=613.6fedc0a3f7f7d935553d.bundle.js.map

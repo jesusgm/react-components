@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[44],{1006:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/arrow-left-circle.9e2ea93c.svg"}}]);
+//# sourceMappingURL=44.6fedc0a3f7f7d935553d.bundle.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1067],{2029:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/trophy.2d82d59a.svg"}}]);
+//# sourceMappingURL=1067.6fedc0a3f7f7d935553d.bundle.js.map

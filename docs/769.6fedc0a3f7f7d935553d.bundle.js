@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[769],{1731:function(module,exports,__webpack_require__){module.exports=__webpack_require__.p+"static/media/layout-text-sidebar.90a04af7.svg"}}]);
+//# sourceMappingURL=769.6fedc0a3f7f7d935553d.bundle.js.map
